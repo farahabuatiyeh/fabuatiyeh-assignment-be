@@ -22,8 +22,8 @@ else:
 
 db = SQLAlchemy(app)
 
-from iebank_api.models import Account
+from recipebook_api.models import Recipe
 db.create_all()
 CORS(app)
 
-from iebank_api import routes
+from recipebook_api import routes
